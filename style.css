@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	background: ;
+	color: #5B5B5A;
+}
+
+header {
+	position: fixed;
+	z-index: 100;
+	padding: 0 1em;
+	color: white;
+	background: #1B1B1B;
+	top: 0;
+	width: 58em;
+	margin-left: -30em;
+	left: 50%;
+}
+
+h1 {
+	float: left;
+	font-size: 1.5em;
+	line-height: 1;
+	font-variant: small-caps;
+	text-decoration: none;
+	text-align: left;
+	white-space: normal;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+nav ul li {
+	float: left;
+	clear: none;
+	width: 4em;
+	padding: 0.5em;
+}
+
+.row {
+	width: inherit;
+	padding: 1em;
+	margin: 0;
+	clear: both;
+	float: none;
+	box-sizing: border-box;
+}
+
+#hero {
+	background: #1B1B1B;
+	box-shadow: 0 0 2em #1B1B1B;
+	left: 0;
+	right: 0;
+	position: relative;
+	top: 0;
+	height: 400px;
+	padding-top: 3.5em;
+}
+
+#content {
+	margin: 0 auto;
+	width: 60em;
+}
+
+h2 {
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-transform: none;
+	margin: 0;
+	padding: 0;
+}
+
+.work-placeholder {
+	display: block;
+	cursor: pointer;
+	box-sizing: border-box;
+	margin: 0.5em;
+	position: relative;
+	background: #d9d9d9;
+}
