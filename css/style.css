@@ -127,6 +127,7 @@ a:hover { outline: 0; }
 		height: 1em;
 		text-align: center;
 		font-size: 1em;
+		font-family: 'Open Sans', sans-serif;
 	}
 	
 	nav li:hover {
@@ -137,38 +138,34 @@ a:hover { outline: 0; }
 
 /* @start Projects */
 	#zero {
-		background: url('http://placehold.it/480x320&text=0+A.D.+Placeholder');
-		width: 30em;
-		height: 20em;
-		margin-right: 1em;
-		float: left;
-		position: relative;
+		width: 29em;
+		height: 15em;
+		margin-left: 0;
 	}
 	
-	#pyro {
-		background: url('http://placehold.it/464x152&text=Pyro+Placeholder');
-		height: 9.5em;
-		width: 29em;
+	.panel {
+		background: #d9d9d9;
+		margin: 0 0 1em 1em;
+		height: 15em;
+		width: 13em;
 		float: left;
 		clear: none;
+		padding: .5em;
 		position: relative;
-		margin-bottom: 1em;
-	}
-	
-	#raw {
-		background: url('http://placehold.it/464x152&text=RAW+Placeholder');
-		margin: 0;
-		height: 9.5em;
-		width: 29em;
-		float: left;
-		clear: none;
-		position: relative;
+		border-radius: .5em;
+		-moz-border-radius: .5em;
+		-webkit-border-radius: .5em;
 	}
 	
 	.title {
 		float: left;
 		background: none;
-		color: #fff;
+		color: #111;
+		font: normal 1em/1 "Open Sans", sans-serif;
+		padding: .25em;
+		position: absolute;
+		bottom: 0.5em;
+		
 	}
 	
 	.button {
@@ -177,10 +174,12 @@ a:hover { outline: 0; }
 	 	width: auto;
 	 	padding: .25em;
 	 	color: #fff;
-	 	float: right;
+	 	font: normal 1em/1 "Open Sans", sans-serif;
 	 	text-decoration: none;
 	 	text-align: right;
-	 	position: relative;
+	 	position: absolute;
+	 	bottom: .5em;
+	 	right: .5em;
 	 	-webkit-transition: background 0.25s linear;
 	 	-moz-transition: background 0.25s linear;
 	 	transition: background 0.25s linear;
