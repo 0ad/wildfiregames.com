@@ -224,12 +224,8 @@ a:hover { outline: 0; }
 		width: 50em;
 	}
 	
-	#hero{
-		display: none;
-	}
-	
-	#intro {
-		margin-top: 4.5em;
+	#hero {
+		height: 25em;
 	}
 }
 
