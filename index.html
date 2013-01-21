@@ -37,9 +37,9 @@
 	<div id="hero">
 		<div class="content">
 			<div id="featured">
-				<img src="http://placehold.it/960x480&text=1Placeholder" />
+				<img src="http://placehold.it/960x480/3b3/111&text=1Placeholder" />
 				<img src="http://placehold.it/960x480&text=2Placeholder" />
-				<img src="http://placehold.it/960x480&text=3Placeholder" />
+				<img src="http://placehold.it/960x480/508fbd/111&text=3Placeholder" />
 			</div>
 		</div>
 	</div>
@@ -57,22 +57,25 @@
 			<section id="zero" class="panel">
 				<img src="http://placehold.it/288x192&text=Image+Placeholder" />
 				<span class="title">0 A.D.</span>
+				<span class="caption">A free, open-source game of ancient warfare</span>
 				<a class="button" href="http://play0ad.com">More Info</a>
 			</section>
 			
 			<section class="panel">
 				<img src="http://placehold.it/288x192&text=Image+Placeholder" />
 				<span class="title">Pyrogenisis</span>
+				<span class="caption">A home-grown 3D engine</span>
 				<a class="button" href="http://">More Info</a>
 			</section>
 			
 			<section class="panel">
 				<img src="http://placehold.it/288x192&text=Image+Placeholder" />
 				<span class="title">Rome At War</span>
+				<span class="caption">A total conversion mod for AoK</span>
 				<a class="button" href="http://wildfiregames.com/raw">More Info</a>
 			</section>
 			
-			<div style="clear: both;"></div>
+			<div class="clearfix"></div>
 		</article>
 
 		<article id="about" class="smoothScroll">
@@ -106,10 +109,26 @@
   	<script src="js/orbit.js" type="text/javascript"></script>
   	<script type="text/javascript">
   		$(window).load(function() {
-  	    	$("#featured").orbit();
+  	    	$('#featured').orbit({
+  	    	  animation: 'fade',       		      // fade, horizontal-slide, vertical-slide, horizontal-push
+  	    	  animationSpeed: 800,                // how fast animtions are
+  	    	  timer: true,                        // true or false to have the timer
+  	    	  resetTimerOnClick: false,           // true resets the timer instead of pausing slideshow progress
+  	    	  advanceSpeed: 5000,                 // if timer is enabled, time between transitions
+  	    	  pauseOnHover: false,                // if you hover pauses the slider
+  	    	  startClockOnMouseOut: false,        // if clock should start on MouseOut
+  	    	  startClockOnMouseOutAfter: 1000,    // how long after MouseOut should the timer start again
+  	    	  directionalNav: true,               // manual advancing directional navs
+  	    	  captions: true,                     // do you want captions?
+  	    	  captionAnimation: 'fade',           // fade, slideOpen, none
+  	    	  captionAnimationSpeed: 800,         // if so how quickly should they animate in
+  	    	  bullets: false,                     // true or false to activate the bullet navigation
+  	    	  bulletThumbs: false,                // thumbnails for the bullets
+  	    	  bulletThumbLocation: '',            // location from this file where thumbs will be
+  	    	  fluid: '2x1'                        // or set a aspect ratio for content slides (ex: '4x3')
+  	    	});
   	   	});
   	</script>
   	
-  
 </body>
 </html>

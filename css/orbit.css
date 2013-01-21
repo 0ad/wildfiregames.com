@@ -33,8 +33,8 @@
 /* Directional Nav ---------------------- */
 .orbit-wrapper .slider-nav { display: block; }
 .orbit-wrapper .slider-nav span { width: 39px; height: 50px; text-indent: -9999px; position: absolute; z-index: 30; top: 50%; margin-top: -25px; cursor: pointer; }
-.orbit-wrapper .slider-nav span.right { background: url('../img/foundation/orbit/right-arrow.png'); background-size: 100%; right: 0; }
-.orbit-wrapper .slider-nav span.left { background: url('../img/foundation/orbit/left-arrow.png'); background-size: 100%; left: 0; }
+.orbit-wrapper .slider-nav span.right { background: url('../img/orbit/right-arrow.png'); background-size: 100%; right: 0; }
+.orbit-wrapper .slider-nav span.left { background: url('../img/orbit/left-arrow.png'); background-size: 100%; left: 0; }
 
 .lt-ie9 .orbit-wrapper .slider-nav span.right { background: url('../img/orbit/right-arrow-small.png'); }
 .lt-ie9 .orbit-wrapper .slider-nav span.left { background: url('../img/orbit/left-arrow-small.png'); }

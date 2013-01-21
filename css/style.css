@@ -1,9 +1,8 @@
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-/* [[Global Styles]] */
+/* =Global 
+-----------------------------------------------------------*/
+article, aside, details, figcaption,
+figure, footer, header, hgroup, menu,
+nav, section { display: block; }
 
 html {
     font-size: 100%; /* 1 */
@@ -15,9 +14,7 @@ html,
 button,
 input,
 select,
-textarea {
-    font-family: 'Fanwood Text', serif;
-}
+textarea { font-family: 'Fanwood Text', serif; }
 
 body {
 	margin: 0;
@@ -26,198 +23,237 @@ body {
 	color: #5B5B5A;
 }
 
+ol, ul { list-style: none; }
+
 a { color: inherit; text-decoration: none; }
 a:focus { outline: thin dotted; }
 a:active,
 a:hover { outline: 0; }
 
-/* @start Fonts */
-	h1 {
-		float: left;
-		font-size: 1.5em;
-		line-height: 1;
-		font-variant: small-caps;
-		text-decoration: none;
-		text-align: left;
-		white-space: normal;
-		font-family: 'Open Sans', sans-serif;
-	}
-	
-	h2 {
-		text-align: center;
-		text-decoration: none;
-		font-size: 1.5em;
-		line-height: 1.5em;
-		font-weight: bold;
-		font-variant: small-caps;
-		text-transform: none;
-		margin: 0;
-		padding: 0;
-		font-family: 'Open Sans', sans-serif;
-	}
-	
-	ol, ul {
-		list-style: none;
-	}
-	
-	p{
-		text-decoration: none;
-		font: normal 1em/1.5 'Fanwood Text', serif;
-	}
-	
-	blockquote, q {
-		quotes: none;
-		background: #c9c9c9;
-		padding: .5em;
-		line-height: 1.5;
-	}
-	
-	blockquote:before, blockquote:after,
-	q:before, q:after {
-		content: '';
-		content: none;
-	}
-	
-	h3{
-		font: normal 1em/1.5em 'Open Sans', sans-serif;
-		font-variant: small-caps;
-	}
-/* @end Fonts */
+.content {
+	margin: 0 auto;
+	width: 60em;
+	padding: 0;
+	transition:all .25s linear; 
+	-o-transition:all .25s linear; 
+	-moz-transition:all .25s linear; 
+	-webkit-transition:all .25s linear;
+}
 
+.smoothScroll {
+	clear: both;
+	float: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* =Typography 
+-----------------------------------------------------------*/
+p {
+	text-decoration: none;
+	font: normal 1em/1.5 'Fanwood Text', serif;
+}
+
+blockquote,
+q {
+	quotes: none;
+	background: #c9c9c9;
+	padding: .5em;
+	line-height: 1.5;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+h1 {
+	float: left;
+	font-size: 1.5em;
+	line-height: 1;
+	font-variant: small-caps;
+	text-decoration: none;
+	text-align: left;
+	white-space: normal;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-transform: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+	font: normal 1em/1.5em 'Open Sans', sans-serif;
+	font-variant: small-caps;
+}
+
+/* =Header 
+-----------------------------------------------------------*/
+header {
+	position: fixed;
+	z-index: 100;
+	color: white;
+	width: 100%;
+	margin: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: #161616;
+	height: 4em;
+	border-bottom: .5em solid #2B2B2B;
+	-moz-transition: width .25s;
+}
+
+nav ul {
+   	list-style: none;
+   	list-style-image: none;
+   	margin: 0;
+   	padding: 0;
+   	float: right;
+}
+	
+nav li {
+	float: left;
+	clear: none;
+	width: 4em;
+	padding: 1.5em 0.5em;
+	height: 1em;
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+}
+	
+nav li:hover,
+nav li:focus,
+nav li:active {
+	background-color: #eeeeee;
+	color: #161616;
+}
+
+/* =Content 
+-----------------------------------------------------------*/
 #hero {
 	background: #1B1B1B url('../img/hero.png') repeat center center;
 	left: 0;
 	right: 0;
 	position: relative;
 	height: 30em;
-	border-bottom: .5em solid #333;
+	border-bottom: .5em solid #282828;
 	margin: 4.5em auto 0;
 	padding: 1em 0;
 }
 
-.content {
-	margin: 0 auto;
-	width: 60em;
-	padding: 0;
-	transition:all .2s linear; 
-	-o-transition:all .2s linear; 
-	-moz-transition:all .2s linear; 
-	-webkit-transition:all .2s linear;
+#intro { margin-top: 1em; }
+
+/* =Projects 
+-----------------------------------------------------------*/
+#zero {
+	margin-left: 0;
 }
 
-/* @start Header */
-	header {
-		position: fixed;
-		z-index: 100;
-		color: white;
-		width: 100%;
-		margin: 0;
-		left: 0;
-		right: 0;
-		top: 0;
-		background-color: #161616;
-		height: 4em;
-		border-bottom: .5em solid #2B2B2B;
-		-moz-transition: width .25s;
-	}
+.panel {
+	background: #D9D9D9;
+	clear: none;
+	float: left;
+	height: 14em;
+	margin: 1.5em 0 1.5em 1.5em;
+	padding: 0.5em;
+	position: relative;
+	width: 18em;
+	border-radius: .5em;
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+	-moz-transition: background 0.25s linear;	
+}
 
-	nav ul {
-    	list-style: none;
-    	list-style-image: none;
-    	margin: 0;
-    	padding: 0;
-    	float: right;
-	}
-	
-	nav li {
-		float: left;
-		clear: none;
-		width: 4em;
-		padding: 1.5em 0.5em;
-		height: 1em;
-		text-align: center;
-		font-size: 1em;
-		font-family: 'Open Sans', sans-serif;
-	}
-	
-	nav li:hover,
-	nav li:focus,
-	nav li:active {
-		background-color: #eeeeee;
-		color: #161616;
-	}
-/* @end Header */
+.panel:hover {
+	background-color: #B3B3B3;
+}
 
-/* @start Projects */
-	#zero {
-		margin-left: 0;
-	}
-	
-	.panel {
-		background: #D9D9D9;
-		clear: none;
-		float: left;
-		height: 14em;
-		margin: 1.5em 0 1.5em 1.5em;
-		padding: 0.5em;
-		position: relative;
-		width: 18em;
-		border-radius: .5em;
-		-moz-border-radius: .5em;
-		-webkit-border-radius: .5em;
-		transition: background 0.25s linear;
-		-webkit-transition: background 0.25s linear;
-		-moz-transition: background 0.25s linear;	
-	}
-	
-	.panel:hover {
-		background-color: #bdbdbd;
-	}
-	
-	.title {
-		background: none;
-		bottom: 0.5em;
-		color: #111111;
-		font: 1em/1 "Open Sans",sans-serif;
-		left: 0.5em;
-		padding: 0.25em;
-		position: absolute;
-	}
-	
-	.button {
-	 	display: block;
-	 	background: #ff0000;
-	 	width: auto;
-	 	padding: .25em;
-	 	color: #fff;
-	 	font: normal 1em/1 "Open Sans", sans-serif;
-	 	text-decoration: none;
-	 	text-align: right;
-	 	position: absolute;
-	 	bottom: .5em;
-	 	right: .5em;
-	 	transition: background 0.25s linear;
-	 	-webkit-transition: background 0.25s linear;
-	 	-moz-transition: background 0.25s linear;
-	 	border-radius: .25em;
-	 	-moz-border-radius: .25em;
-	 	-webkit-border-radius: .25em;
-	 }
-	
-	.button:hover {
-		background-color: #ae2323;
-		color: #fff;
-	}
-	
-/* @end Projects */
+.panel img {
+	width: 18em;
+	height: 12em;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
 
+.title {
+	background: none;
+	bottom: 0.5em;
+	color: #111111;
+	font: 1em/1 "Open Sans",sans-serif;
+	left: 0.5em;
+	padding: 0.25em;
+	position: absolute;
+}
 
+.caption {
+	width: 17em;
+	height: auto;
+	font: normal 1em/2 "Fanwood Text", serif;
+	margin: 0;
+	position: absolute;
+	padding: 0 .5em;
+	background: rgba(0, 0, 0, 0.5);
+	bottom: 2.5em;
+	color: #e6e6e6;
+}
+
+.button {
+ 	display: block;
+ 	background: #299329;
+ 	width: auto;
+ 	padding: .25em;
+ 	color: #fff;
+ 	font: normal 1em/1 "Open Sans", sans-serif;
+ 	text-decoration: none;
+ 	text-align: right;
+ 	position: absolute;
+ 	bottom: .5em;
+ 	right: .5em;
+ 	transition: background 0.25s linear;
+ 	-webkit-transition: background 0.25s linear;
+ 	-moz-transition: background 0.25s linear;
+ 	border-radius: .25em;
+ 	-moz-border-radius: .25em;
+ 	-webkit-border-radius: .25em;
+ }
+
+.button:hover {
+	background-color: #185718;
+	color: #fff;
+}
+
+/* =Contact Form 
+-----------------------------------------------------------*/
+
+/* =Retina Displays 
+-----------------------------------------------------------*/
 @media 
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) {
 	#hero { background: #1B1B1B url('../img/hero@2X.png') repeat center center; }
 }
 
+/* =Responsive Layouts 
+-----------------------------------------------------------*/
 /* For screen widths less than 60em */
 @media screen and (max-width: 60em){
 	.content {
@@ -226,6 +262,21 @@ a:hover { outline: 0; }
 	
 	#hero {
 		height: 25em;
+	}
+	
+	.panel {
+		margin: 1em 0 1em 1em;
+		width: 15em;
+		height: 12em;
+	}
+	
+	.panel img {
+		width: 15em;
+		height: 10em;
+	}
+	
+	.caption {
+		width: 14em;
 	}
 }
 
@@ -242,6 +293,25 @@ a:hover { outline: 0; }
 	#intro {
 		margin-top: 4.5em;
 	}
+	
+	#zero { margin: 1em auto; }
+	
+	.panel {
+		margin: 1em auto;
+		width: 27em;
+		height: 18em;
+		float: none;
+		clear: both;
+	}
+	
+	.panel img {
+		width: 27em;
+		height: 16em;
+	}
+	
+	.caption {
+		width: 26em;
+	}
 }
 
 /* For screen widths less than 40em */
@@ -250,11 +320,4 @@ a:hover { outline: 0; }
 		width: 30em;
 	}
 	
-	#hero{
-		display: none;
-	}
-	
-	#intro {
-		margin-top: 4.5em;
-	}
 }
