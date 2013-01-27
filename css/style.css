@@ -157,13 +157,17 @@ nav li:active {
 	padding: 1em 0;
 }
 
+#featured img { display: none; }
+#featured.orbit { background: none; }
+#featured.orbit img { display: block; }
+
 #intro { margin-top: 1em; }
+
+#about { padding: .5em; }
 
 /* =Projects 
 -----------------------------------------------------------*/
-#zero {
-	margin-left: 0;
-}
+#zero { margin-left: 0; }
 
 .panel {
 	background: #D9D9D9;
@@ -282,17 +286,11 @@ nav li:active {
 
 /* For screen widths less than 50em */
 @media screen and (max-width: 50em){
-	.content {
-		width: 40em;
-	}
+	.content { width: 40em; }
 	
-	#hero{
-		display: none;
-	}
+	#hero{ display: none; }
 	
-	#intro {
-		margin-top: 4.5em;
-	}
+	#intro { margin-top: 4.5em; }
 	
 	#zero { margin: 1em auto; }
 	
@@ -309,9 +307,7 @@ nav li:active {
 		height: 16em;
 	}
 	
-	.caption {
-		width: 26em;
-	}
+	.caption { width: 26em; }
 }
 
 /* For screen widths less than 40em */
@@ -319,5 +315,4 @@ nav li:active {
 	.content {
 		width: 30em;
 	}
-	
 }
