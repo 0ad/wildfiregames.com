@@ -245,16 +245,6 @@ nav li:active {
 	color: #fff;
 }
 
-/* =Contact Form 
------------------------------------------------------------*/
-
-/* =Retina Displays 
------------------------------------------------------------*/
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) {
-	#hero { background: #1B1B1B url('../img/hero@2X.png') repeat center center; }
-}
 
 /* =Responsive Layouts 
 -----------------------------------------------------------*/
@@ -264,7 +254,7 @@ nav li:active {
 		width: 50em;
 	}
 	
-	#hero {
+	#hero{
 		height: 25em;
 	}
 	
