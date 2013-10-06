@@ -14,7 +14,7 @@ html,
 button,
 input,
 select,
-textarea { font-family: 'Fanwood Text', serif; }
+textarea { font-family: 'Gentium Basic', serif; }
 
 body {
 	margin: 0;
@@ -62,7 +62,7 @@ hr {
 -----------------------------------------------------------*/
 p {
 	text-decoration: none;
-	font: normal 1em/1.5 'Fanwood Text', serif;
+	font: normal 1em/1.5 'Gentium Basic', serif;
 }
 
 blockquote,
@@ -218,7 +218,7 @@ nav li:active {
 .caption {
 	width: 17em;
 	height: auto;
-	font: normal 1em/2 "Fanwood Text", serif;
+	font: normal 1em/2 "Gentium Basic", serif;
 	margin: 0;
 	position: absolute;
 	padding: 0 .5em;

@@ -1,0 +1,22 @@
+/* TEAM */
+
+	Content: Aviv Sharon
+	Site: 
+	Location: Israel
+	
+	Design: A. Mishra                        
+	Site: about.me/mishftw                                
+	Location: United States
+
+					
+/* THANKS */
+							
+	Orbit Slider: http://zurb.com/playground/orbit-jquery-image-slider
+
+                            
+/* SITE */
+
+	Last update: 2013/09/22       
+	Standards: HTML5, CSS3     
+	Components: Modernizr, jQuery, etc.      
+	Software: Brackets, GitHub
