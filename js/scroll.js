@@ -34,7 +34,8 @@ $(function() {
 						$(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
 
 							// Set hash in URL after animation successful
-							location.hash = target;
+							// disabled this, causes page jumping with the top offset  -implodedok
+							//location.hash = target;
 
 						});
 					});
