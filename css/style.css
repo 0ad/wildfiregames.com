@@ -126,6 +126,10 @@ header {
 	border-bottom: .5em solid #2B2B2B;
 	-moz-transition: width .25s;
 }
+header img {
+	margin-top: 10px;
+	float: left;
+}
 header a {
 	color: white;
 }
