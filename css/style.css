@@ -143,19 +143,23 @@ nav ul {
 }
 	
 nav li {
-	float: left;
+r	float: left;
 	clear: none;
-	width: 4em;
+}
+
+nav a {
+	display: block;
 	padding: 1.5em 0.5em;
+	width: 4em;
 	height: 1em;
 	text-align: center;
 	font-size: 1em;
 	font-family: 'Open Sans', sans-serif;
 }
-	
-nav li:hover,
-nav li:focus,
-nav li:active {
+
+nav a:hover,
+nav a:focus,
+nav a:active {
 	color: #F1F1D4;
 }
 
